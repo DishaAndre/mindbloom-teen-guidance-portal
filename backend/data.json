@@ -1,0 +1,240 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "username": "child",
+      "password": "child123",
+      "role": "child",
+      "name": "Alex",
+      "age": 12,
+      "badges": [
+        "first_question"
+      ]
+    },
+    {
+      "id": "u2",
+      "username": "child2",
+      "password": "child123",
+      "role": "child",
+      "name": "Jamie",
+      "age": 11,
+      "badges": []
+    },
+    {
+      "id": "c1",
+      "username": "counselor",
+      "password": "counselor123",
+      "role": "counselor",
+      "name": "Dr. Priya Mehta",
+      "specialization": "School & Social Issues"
+    },
+    {
+      "id": "c2",
+      "username": "counselor2",
+      "password": "counselor123",
+      "role": "counselor",
+      "name": "Mr. Raj Sharma",
+      "specialization": "Family & Emotions"
+    },
+    {
+      "id": "a1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Admin"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "userId": "u1",
+      "userName": "Alex",
+      "title": "My best friend stopped talking to me",
+      "content": "We had a small argument last week and now she ignores me at school. I don't know what I did wrong and it makes me sad and anxious.",
+      "category": "Friendship Issues",
+      "isPrivate": false,
+      "isUrgent": false,
+      "status": "Answered",
+      "assignedTo": "c1",
+      "counselorName": "Dr. Priya Mehta",
+      "reply": "Thank you for sharing this. Friendship conflicts are very common at your age and it shows you care deeply about this relationship.\n\nTry giving your friend a little space, then reach out with something simple like: \"I miss talking to you — can we talk about what happened?\" Keep it calm and kind. Most misunderstandings can be resolved with honest, gentle communication.\n\nYou are not alone in this, and reaching out for help was exactly the right thing to do.",
+      "isFlagged": false,
+      "createdAt": "2024-01-15T10:00:00Z",
+      "answeredAt": "2024-01-16T14:00:00Z"
+    },
+    {
+      "id": "q2",
+      "userId": "u2",
+      "userName": "Jamie",
+      "title": "A group of kids makes fun of me every day",
+      "content": "They laugh at my clothes and how I speak. It happens during lunch and I've started skipping lunch to avoid them. I haven't told a teacher because I'm scared it will get worse.",
+      "category": "Bullying",
+      "isPrivate": true,
+      "isUrgent": true,
+      "status": "Assigned to Counselor",
+      "assignedTo": "c2",
+      "counselorName": "Mr. Raj Sharma",
+      "reply": null,
+      "isFlagged": false,
+      "createdAt": "2024-01-17T09:00:00Z",
+      "answeredAt": null
+    },
+    {
+      "id": "q3",
+      "userId": "u1",
+      "userName": "Alex",
+      "title": "I feel very anxious before every exam",
+      "content": "I can't sleep properly before tests, my stomach hurts, and I feel like I will fail even when I've studied hard. My parents have high expectations and it makes things worse.",
+      "category": "Mental Feelings",
+      "isPrivate": false,
+      "isUrgent": false,
+      "status": "Under Review",
+      "assignedTo": null,
+      "counselorName": null,
+      "reply": null,
+      "isFlagged": false,
+      "createdAt": "2024-01-18T11:00:00Z",
+      "answeredAt": null
+    }
+  ],
+  "articles": [
+    {
+      "id": "a1",
+      "title": "Working Through Friendship Conflicts",
+      "category": "Friendship",
+      "summary": "Disagreements with friends are a normal part of growing up. Learning to handle them well builds skills for life.",
+      "tips": [
+        "Calm down before attempting a difficult conversation",
+        "Listen to your friend's perspective without interrupting",
+        "Use 'I feel...' statements rather than accusations",
+        "Apologise sincerely if you made a mistake",
+        "Remember that conflict doesn't mean the friendship is over"
+      ],
+      "approved": true,
+      "authorName": "Dr. Priya Mehta"
+    },
+    {
+      "id": "a2",
+      "title": "Staying Safe Online",
+      "category": "Online Safety",
+      "summary": "The internet is powerful, but it comes with risks every young person should understand.",
+      "tips": [
+        "Never share your address, phone number, or school name with strangers",
+        "Tell a trusted adult if someone makes you uncomfortable online",
+        "Do not agree to meet someone you only know from the internet",
+        "Block and report anyone who is rude or threatening",
+        "Think before you post — content can stay online forever"
+      ],
+      "approved": true,
+      "authorName": "Mr. Raj Sharma"
+    },
+    {
+      "id": "a3",
+      "title": "Managing Exam Stress",
+      "category": "School",
+      "summary": "Feeling nervous before tests is completely normal. These strategies can help you stay calm and focused.",
+      "tips": [
+        "Break your study sessions into 25-minute focused blocks with short breaks",
+        "Get 8 to 9 hours of sleep the night before an exam",
+        "Try slow, deep breathing when you feel panicked",
+        "Talk to a parent or counsellor if pressure becomes overwhelming"
+      ],
+      "approved": true,
+      "authorName": "Dr. Priya Mehta"
+    },
+    {
+      "id": "a4",
+      "title": "Understanding Your Emotions",
+      "category": "Mental Health",
+      "summary": "Strong emotions can feel overwhelming. Learning to understand them is one of the most valuable things you can do.",
+      "tips": [
+        "All emotions are valid — there is no such thing as a wrong feeling",
+        "Try naming the emotion — simply identifying it reduces its intensity",
+        "Write in a journal to process thoughts you find hard to say out loud",
+        "Reach out to someone you trust when emotions feel unmanageable"
+      ],
+      "approved": true,
+      "authorName": "Mr. Raj Sharma"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "qz1",
+      "title": "Online Safety",
+      "questions": [
+        {
+          "q": "Someone online asks for your home address. What should you do?",
+          "options": [
+            "Share it — they seem friendly",
+            "Ignore and block them, then tell a trusted adult",
+            "Give your school address instead",
+            "Ask a friend for advice first"
+          ],
+          "correct": 1,
+          "explanation": "Never share personal information with strangers online. Block them and immediately tell a trusted adult."
+        },
+        {
+          "q": "You see a hurtful comment posted about a classmate. The best response is to:",
+          "options": [
+            "Like the comment",
+            "Share it with others",
+            "Tell a trusted adult and check on your classmate",
+            "Ignore it"
+          ],
+          "correct": 2,
+          "explanation": "Reporting cyberbullying and supporting the person affected is always the right approach."
+        },
+        {
+          "q": "Which makes the strongest password?",
+          "options": [
+            "Your birthday",
+            "Your pet's name",
+            "A mix of letters, numbers and symbols",
+            "Your first name"
+          ],
+          "correct": 2,
+          "explanation": "A strong password combines uppercase, lowercase, numbers and symbols — making it hard to guess."
+        }
+      ]
+    },
+    {
+      "id": "qz2",
+      "title": "Emotions & Wellbeing",
+      "questions": [
+        {
+          "q": "A friend says something that hurts your feelings. The healthiest response is to:",
+          "options": [
+            "Shout at them",
+            "Ignore them permanently",
+            "Calmly explain how their words made you feel",
+            "Tell everyone what they did"
+          ],
+          "correct": 2,
+          "explanation": "Expressing your feelings calmly and directly is the most effective way to resolve misunderstandings."
+        },
+        {
+          "q": "When you feel very stressed, a good first step is to:",
+          "options": [
+            "Take five slow deep breaths",
+            "Eat a lot of food",
+            "Stay up late watching videos",
+            "Keep all your worries to yourself"
+          ],
+          "correct": 0,
+          "explanation": "Deep breathing activates the body's calming response and is one of the quickest ways to reduce stress."
+        },
+        {
+          "q": "Feeling sad or anxious sometimes means:",
+          "options": [
+            "Something is seriously wrong with you",
+            "You are weak",
+            "You are having completely normal human emotions",
+            "You should hide it from everyone"
+          ],
+          "correct": 2,
+          "explanation": "All emotions — including difficult ones — are a normal part of being human."
+        }
+      ]
+    }
+  ]
+}
